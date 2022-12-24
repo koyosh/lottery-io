@@ -5,6 +5,21 @@
   box-sizing: border-box;
 }
 
+button {
+  background: none;
+  border: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+body {
+  background: #efefef;
+  color: #1e1e1e;
+}
+
 header {
   background: #1e1e1e;
   color: #efefef;
@@ -15,6 +30,8 @@ header {
 header hr {
   border: 0.5px solid #efefef;
   width: 40%;
+  max-width: 480px;
+  min-width: 240px;
   margin: 12px auto;
 }
 
@@ -31,4 +48,103 @@ header hr {
 .after-fade-in-upwards {
   opacity: 1;
   translate: 0;
+}
+
+#content-wrapper {
+  width: 40%;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+#add-wrapper {
+  margin-top: 24px;
+  text-align: center;
+}
+#add-wrapper input {
+  border: 1px solid #1e1e1e;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 0 8px;
+}
+#add-wrapper input:focus {
+  outline: 1px solid #5f8fff;
+}
+#add-wrapper input:first-child {
+  height: 48px;
+  width: 40%;
+  min-width: 160px;
+}
+#add-wrapper input:nth-child(2) {
+  width: 15%;
+  height: 48px;
+  min-width: 18px;
+}
+#add-wrapper button {
+  height: 48px;
+  width: 64px;
+  margin-left: 12px;
+  border: none;
+  background: #1e1e1e;
+  color: #efefef;
+  border-radius: 8px;
+}
+
+#exec-button {
+  display: block;
+  width: 180px;
+  height: 48px;
+  border-radius: 8px;
+  margin: 16px auto;
+  background: #5f8fff;
+  color: #efefef;
+}
+
+.options {
+  border: 1px solid #1e1e1e;
+  border-radius: 8px;
+  padding: 12px;
+  min-height: 48px;
+  background: #fff;
+  position: relative;
+}
+.options:not(:first-child) {
+  margin-top: 12px;
+}
+.options:hover {
+  opacity: 0.6;
+  border-style: dotted;
+}
+
+#winner-window {
+  width: 90%;
+  max-width: 480px;
+  min-width: 310px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 24px;
+  background: #efefef;
+  border: 3px solid #5f8fff;
+  color: #5f8fff;
+  text-align: center;
+  position: absolute;
+  top: 12px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#winner-window p {
+  line-height: 24px;
+}
+#winner-window h1 {
+  line-height: 48px;
+}
+#winner-window button {
+  background: #efefef;
+  color: #5f8fff;
+  border: 2px solid #5f8fff;
+  font-weight: bold;
+  width: 280px;
+  height: 48px;
 }/*# sourceMappingURL=style.css.map */

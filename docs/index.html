@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,34 @@
   <link rel="stylesheet" href="./css/style.css">
   <title>Lottery.io</title>
 </head>
+
 <body>
   <header>
     <h2 class="hide before-fade-in-upwards">Lottery.io</h2>
     <hr>
     <p class="hide before-fade-in-upwards">by fl4mb3</p>
   </header>
-  
-  
-  
-  
-  
+
+  <div id="content-wrapper" class="hide before-fade-in-upwards">
+    <div id="add-wrapper">
+      <input type="text" placeholder="Enter option name..." maxlength="30"> × <input type="text" placeholder="1">
+      <button>Add</button>
+    </div>
+
+    <button id="exec-button">GO!</button>
+
+    <div id="option-wrapper"></div>
+
+  </div>
+
+  <div id="winner-window" class="hide">
+    <p>THE WINNER IS...</p>
+    <h1></h1>
+    <button>CLOSE WINDOW</button>
+  </div>
+
+  <script src="./js/shortcut.js"></script>
   <script src="./js/main.js"></script>
 </body>
+
 </html>
